@@ -1,0 +1,63 @@
+/*========================================================
+Varuable Css
+========================================================*/
+/*========================================================
+Common Css
+========================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*========================================================
+Fonts Css
+========================================================*/
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #261b1d;
+}
+/*# sourceMappingURL=style.css.map */
