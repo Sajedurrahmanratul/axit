@@ -20,7 +20,13 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
-  height: 5000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.root {
+  overflow-x: hidden;
 }
 
 /*========================================================
@@ -473,6 +479,68 @@ Stylish Css
 /*========================================================
 Contact-Us Css
 ========================================================*/
+.contact-us {
+  padding: 100px 0 50px 0;
+}
+
+.contact-us .heading {
+  margin-bottom: 100px;
+}
+
+.contact-us .heading .head-text {
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-us .heading .head-text::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 45%;
+  width: 10%;
+  height: 2px;
+  background: #ff8b38;
+}
+
+.contact-us .form .form-control {
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+}
+
+.contact-us textarea {
+  resize: none;
+}
+
+.contact-us .button button {
+  background: #ff8b38;
+  outline: none;
+  border: none;
+  padding: 7px 20px;
+}
+
+/*========================================================
+Footer Css
+========================================================*/
+footer {
+  padding: 50px 0;
+  background: #000;
+  color: white;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .social {
+  margin-left: 50%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
 /*========================================================
 Imports Css
 ========================================================*/

@@ -28,7 +28,11 @@ body{
 
     font-family: 'Raleway', sans-serif;
 
-    height: 5000px;
+    height: fit-content;
+}
+
+.root{
+    overflow-x: hidden;
 }
 
 /*========================================================
@@ -462,6 +466,7 @@ Stylish Css
     padding: 70px 0;
     
     .heading{
+       
         .main-text{
             padding-bottom: 20px;
             position: relative;
@@ -496,6 +501,70 @@ Stylish Css
 /*========================================================
 Contact-Us Css
 ========================================================*/
+.contact-us{
+    padding: 100px 0 50px 0;
+    .heading{
+        margin-bottom: 100px;
+        .head-text{
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 30px;
+
+            &::before{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 45%;
+                width: 10%;
+                height: 2px;
+                background: $primary-color;
+        }
+        }
+    }
+
+    .form{
+        .form-control{
+            font-size: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0px;
+            
+           
+        }
+        
+       
+    }
+    textarea{
+        resize: none;
+    }
+
+    .button{
+        button{
+            background: $primary-color;
+            outline: none;
+            border: none;
+            padding: 7px 20px;
+        }
+    }
+}
+
+/*========================================================
+Footer Css
+========================================================*/
+footer{
+    padding: 50px 0;
+    background: #000;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    
+    .social{
+        margin-left: 50%;
+        transform : translateX(-40%) ;
+    }
+}
+
 
 /*========================================================
 Imports Css
