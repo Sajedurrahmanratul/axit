@@ -27,6 +27,8 @@ body{
     font-family: 'Open Sans', sans-serif;
 
     font-family: 'Raleway', sans-serif;
+
+    height: 5000px;
 }
 
 /*========================================================
@@ -52,6 +54,13 @@ h3{
 
 }
 
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -64,9 +73,238 @@ a{
     font-size: 18px;
     font-weight: normal;
     text-decoration: none;
-
+    color: $white-color;
     &:hover{
         text-decoration: none;
-        color: $black-color;
+        color: $white-color;
+    }
+}
+
+/*========================================================
+Nav Css
+========================================================*/
+
+nav{
+    background-color: #000;
+}
+
+/*========================================================
+Header Css
+========================================================*/
+
+header{
+    background: url(/img/header-bg.jpg);
+    width: 100%;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 200px 0;
+    .head-text{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 20%;
+            background: $white-color;
+        }
+    }
+
+    .paragraph{
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .left-button{
+        button{
+            background: transparent;
+            border: 2px solid $white-color;
+            outline: none;
+            color: $white-color;
+            padding: 5px 30px;
+            transition: .3s ease all;
+            &:hover{
+                background: $primary-color;
+                border: 2px solid $primary-color;
+
+            }
+        }
+    }
+
+    .card{
+        .card-header{
+            background-color: #f5f5f5;
+            span{
+                color: $primary-color;
+            }
+        }
+        .card-body{
+           .form-control{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+           }
+        }
+
+        .card-footer{
+            padding: 0;
+            border: none;
+            button{
+                background: $primary-color;
+                border-radius: 2px;
+                padding: 20px 0;
+                outline: none;
+                border: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*========================================================
+Social Media Css
+========================================================*/
+
+.social-media{
+    padding: 25px 0 10px 0;
+    border-bottom: 1px solid rgb(80, 80, 80);
+    p{
+        color: #49455d;
+    }
+    i{
+        margin-left: 50%;
+        color: #49455d;
+    
+    }
+}
+
+/*========================================================
+Features Css
+========================================================*/
+
+.feature{
+    padding: 100px 0;
+    background: #f5f5f5;
+    p{
+        color: #49455d;
+    }
+
+    .btn-danger{
+        background: $primary-color;
+        border: none;
+        padding: 5px 15px;
+
+        &:hover{
+            background: $primary-color;
+        border: none;
+        }
+    }
+}
+
+
+/*========================================================
+About Css
+========================================================*/
+
+.about{
+    padding: 70px 0;
+
+    i{
+        color: $primary-color;
+        padding: 10px 8px;
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+    }
+    p{
+        color: #49455d;
+    }
+    
+    .head{
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 20%;
+            height: 2px;
+            background: $primary-color;
+        }
+    }
+}
+
+/*========================================================
+Standerd Css
+========================================================*/
+
+.standerd{
+    padding: 50px 0;
+
+    p{
+        color: #49455d;
+    }
+    .head{
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        position: relative; 
+
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 20%;
+            height: 2px;
+            background: $primary-color;
+        }
+    }
+}
+
+/*========================================================
+Why Awsome Css
+========================================================*/
+
+.why-awsome{
+    padding: 70px 0 50px 0;
+    background: #f5f5f5;
+    .head{
+        .heading{
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 30px;
+            &::before{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 45%;
+                width: 10%;
+                height: 2px;
+                background: $primary-color;
+            }
+        }
+    }
+
+    .content{
+        .icon{
+            i{
+                color: $primary-color;
+                padding: 20px;
+                border: 1px solid $primary-color;
+                border-radius:  50px;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
